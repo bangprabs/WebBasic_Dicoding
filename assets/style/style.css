@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    display: inline;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+.icon img {
+    width: 20px;
+}
+
+.jumbotron {
+    width: 100%;
+    background-image: url('../../assets/images/bogor.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content-jumbotron {
+    font-size: 20px;
+    background: rgba(42, 43, 82, 0.657);
+    padding: 60px;
+    text-align: center;
+    color: white;
+}
+
+.title {
+    background: rgba(42, 43, 82, 0.883);
+    color: #fff;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.aside {
+    text-align: center;
+}
+
+.jumbotron img {
+    width: 120px;
+    opacity: 80%;
+}
+
+h3 {
+    color: rgba(42, 43, 82, 0.883);
+    margin-left: 20px;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(27, 25, 25, 0.335);
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.featured-image {
+    width: 100%;
+    border-radius: 20px;
+    max-height: 300px;
+    padding: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
+article p {
+    text-align: justify;
+    margin-left: 20px;
+    line-height: 1.5;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+aside {
+    float: right;
+    width: 23%;
+    color: rgb(42, 43, 82);
+}
+
+.map {
+    margin-top: -20px;
+}
+
+.content-section {
+    text-align: center;
+    line-height: 1.5;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.content-section img {
+    margin: 10px;
+}
+
+.flex-container a {
+    display: flexbox;
+    flex-direction: column;
+
+}
+
+.content-section table {
+    text-align: left;
+    font-size: 15px;
+    margin: auto;
+}
+
+section input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    margin-top: 10px;
+}
+
+section input[type=submit] {
+    background-color: #0074d9;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.form-email {
+    padding: 10px;
+    margin-top: -20px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav {
+    background: rgb(42, 43, 82);
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+}
+
+nav a {
+    margin-left: 20px;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+nav .icon {
+    display: none;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.profile .mePic {
+    width: 150px;
+    border: 10%;
+    border-radius: 50%;
+    border: 6px solid #2a2b52b0;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background: #2a2b52;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    nav a:not(:first-child) {
+        display: none;
+    }
+
+    nav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav.responsive {
+        position: sticky;
+    }
+
+    nav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
